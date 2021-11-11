@@ -1,0 +1,365 @@
+body {
+    background-color: #e0e0e0 !important;
+}
+
+b {
+    color: #61686A;
+}
+
+nav {
+    max-width: 680px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: #ffffff;
+}
+
+#logo {
+    margin-top: 40px;
+    padding: 20px 20px;
+}
+
+#banner {
+    text-align: center;
+    height: 26rem;
+    width: 100%;
+    background-image: url(../_resource/blackfriday-bg-emails.png);
+    background-repeat: no-repeat;
+}
+
+#banner .live {
+    margin-top: 5px;
+    padding: 10px 10px;
+    width: 140px;
+    height: 35px;
+}
+
+#banner p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: calc(1vw + .9em);
+}
+
+.count {
+    height: 3vw;
+    padding: 5px 5px;
+}
+
+section {
+    max-width: 680px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: #ffffff;
+}
+
+#mensagem {
+    padding-top: 50px;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+#mensagem p {
+    margin-top: 48px;
+}
+
+#schedule {
+    padding: 0 20px;
+    font-size: 1em;
+    height: 80px;
+    background-color: #f0f0f0;
+}
+
+#agenda p {
+    color: #61686A;
+    font-size: 1.2em;
+}
+
+#agenda {
+    margin-top: 50px;
+    font-size: 0.9em;
+    background: #f0f0f0;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 60rem;
+}
+
+#barraLateral {
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    width: 7px;
+    height: 50px;
+    background: #FCC302;
+}
+
+#conteudo {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+#conteudo ul li {
+    margin-left: -10px;
+    list-style-image: url('../_resource/check-yellow.png');
+    margin-bottom: 10px;
+}
+
+.button {
+    width: calc(6em + 5vw);
+    height: 45px;
+    background-color: #FCC302;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #313336;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+footer {
+    max-width: 680px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: #313336;
+    text-align: center;
+    padding: 15px 10px;
+    height: 7rem;
+}
+
+footer a {
+    padding: 15px 10px;
+}
+
+#cancelInscricao {
+    text-align: center;
+    margin-top: 30px;
+    max-width: 680px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+
+@media (min-width: 500px) {
+
+    nav {
+        height: 28rem;
+    }
+
+    .count {
+        height: 8vw;
+        padding: 5px 5px;
+    }
+
+    #schedule {
+        height: 20rem;
+    }
+
+    #agenda {
+        width: 18rem;
+    }
+
+    #barraLateral {
+        height: 150px;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 15px;
+        padding: 6px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 670px) {
+    #agenda {
+        width: 18rem;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 15px;
+        padding: 7px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 700px) {
+    #agenda {
+        width: 25rem;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 15px;
+        padding: 7px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 750px) {
+
+    nav {
+        height: 25rem;
+    }
+
+    .count {
+        height: 5vw;
+        padding: 5px 5px;
+    }
+
+    #schedule {
+        height: 20rem;
+    }
+
+    #agenda {
+        width: 30rem;
+    }
+
+    #barraLateral {
+        height: 150px;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 15px;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    #agenda {
+        width: 38rem;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 15px;
+        padding: 7px;
+        height: 35px;
+    }
+
+    #barraLateral {
+        height: 120px;
+    }
+
+    #schedule {
+        height: 145px;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    nav {
+        height: 25rem;
+    }
+
+    .count {
+        height: 4vw;
+        padding: 5px 5px;
+    }
+
+    #agenda {
+        width: 45rem;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 16px;
+        padding: 7px;
+        height: 35px;
+    }
+
+    #barraLateral {
+        height: 120px;
+    }
+
+    #schedule {
+        height: 145px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    nav {
+        height: 28rem;
+    }
+
+    .count {
+        height: 5vw;
+        padding: 5px 5px;
+    }
+
+    #agenda {
+        width: 50rem;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #barraLateral {
+        height: 120px;
+    }
+
+    #cancelInscricao {
+        width: 35rem;
+    }
+}
+
+@media (min-width: 1350px) {
+    .count {
+        height: 4vw;
+        padding: 5px 5px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .count {
+        height: 3vw;
+        padding: 5px 5px;
+    }
+
+    #agenda {
+        width: 600px;
+    }
+
+    #schedule {
+        height: 145px;
+    }
+
+    #barraLateral {
+        height: 95px;
+    }
+
+    .button {
+        width: calc(5em + 8vw);
+        font-size: 15px;
+        padding: 8px;
+        height: 40px;
+    }
+}

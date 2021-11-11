@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Manipulando.js"></script>
+    <title>EstudandoJS</title>
+</head>
+<body onload="load()">
+    <h1>Estudando Javascript - Manipulação de Elementos na página</h1>
+
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <h3 id="agradecimento"></h3>
+    <h2 id="clique1" onclick="redirecionar1()"></h2>
+    <h2 id="clique2" onclick="redirecionar2()"></h2>
+    <br>
+    <p id="mouseMove1" onmousemove="trocar()" onmouseout="voltar()"> -> Passe o mouse aqui  </p>
+    <br>
+    <p id="mouseMove2" onmousemove="trocar2(this)" onmouseout="voltar2(this)">-> Passe o mouse aqui 02</p>
+    <br>
+    <p onmousemove="trocar2(this)" onmouseout="voltar2(this)">-> Passe o mouse aqui 02</p>
+    <br>
+    <h4 onmouseover="trocar2(this)" onmouseout="voltar2(this)">Passe o mouse aqui - h4</h4>
+    <br>
+    <select onchange="change(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+header {
+    background-color: #e9fdfe;
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    text-align: justify;
+    font-weight: bold;
+    font-size: calc(.5em + 2vw);
+}
+
+header h2 {
+    text-align: justify;
+    font-size: calc(.5em + 1vw);
+}
+
+header span {
+    color: #dc985a;
+    font-weight: bold;
+}
+
+#centralHeader{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.head{
+    padding-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.pRoxo{
+    color: #f70fe6;
+    text-align: justify;
+    font-style: italic;
+    text-align: left;
+}
+
+#imgHeader {
+    height: calc(50px + 10vw);
+    width: auto;
+    margin-left: auto;
+}
+
+.LinhaTopo {
+    bottom: 0px;
+    border: 9px solid #f70fe6;
+}
+
+section{
+    width: 100%;
+    margin-top: -20px;
+}
+
+.topo{
+    margin-top: -5px;
+
+}
+
+#centralSection{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.LinhaConteudo {
+    border: 0;
+    border-top: 1px solid #d4d4d4;
+}
+
+.p1{
+    font-weight: bold;
+    font-size: calc(.9em + 1vw);;
+}
+
+table {
+    font-family: arial, sans-serif;
+    margin: auto;
+    font-size: 15px;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    width: 25vw;
+    align-items: center;
+}
+
+.dir{
+    text-align: right;
+}
+.esq{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.rp{
+    color: #000000;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: calc(.1em + 1vw);
+    text-align: center;
+}
+
+#aBotao{
+    text-decoration: none;
+}
+
+#Rewards{
+    margin-left: 40px;
+}
+
+.pRewards{
+    text-align: center;
+    font-size: calc(1vw + 5px);
+}
+
+.rewardsConteudo{
+    margin-top: 15px;
+}
+
+#circulo{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 2px solid #8b0582;
+    text-align: center;
+    color: #8b0582;
+    font-size: calc(2vw + .5em);
+    font-weight: bold;
+}
+
+.circ{
+    margin-top: 25%;
+}
+
+.p2{
+    font-weight: bold;
+    font-size: calc(.5em + 1vw);
+}
+
+.pr{
+    width: calc(6em + 14vw);
+    font-size: 10px;
+    text-align: center;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #FCC302;
+    font-size: calc(1em + 1vw);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+article{
+    width: 100%;
+    background-color: #e9fdfe;
+}
+
+#centralArt{
+    margin-left: 50%;
+    transform: translateX(-60%);
+    -webkit-transform: translateX(-60%);
+    -moz-transform: translateX(-60%);
+    -ms-transform: translateX(-60%);
+    -o-transform: translateX(-60%);
+}
+
+#imgArticle{
+    width: 180px;
+    height: 150px;
+}
+
+.imgArt{
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+article h3{
+    font-size: calc(.6em + 1vw);
+}
+
+article p{
+    font-size: 16px;
+}
+
+.CompCodigo u{
+    color: #8b0582;
+}
+
+.CompCodigo{
+    font-size: 17px;
+}
+
+footer{
+    background-color: #31224f;
+    color: #ffffff;
+    width: 100%;
+}
+
+#centralFooter{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.linkFooter{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.linkFooter:hover{
+    text-decoration: none;
+    color: #facc00;
+}
+
+
+.rFooter{
+    margin-top: 3vw;
+    text-align: center;
+}
+
+#copy {
+    color: #868686;
+    margin-top: 1vw;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+}
