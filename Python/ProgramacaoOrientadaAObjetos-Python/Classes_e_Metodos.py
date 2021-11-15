@@ -37,3 +37,6 @@ computador1.ExibirInformacoesComputador()
 computador1.Desligar()
 print('=-=-=' * 5)
 
+
+# Tutorial disponível no YouTube, pelo canal 'Dev Aprender'
+# Vídeo aula do tutorial: https://www.youtube.com/watch?v=j6B8shHXzks&ab_channel=DevAprender
