@@ -1,4 +1,10 @@
+from datetime import datetime
+
 class Pessoa:
+    # variavel (local) ano_atual.
+    ano_atual = int(datetime.strftime(datetime.now(), '%Y'))
+
+
     def __init__(self, nome, idade, comendo=False, falando=False):
         self.nome = nome
         self.idade = idade
@@ -55,6 +61,12 @@ class Pessoa:
         self.comendo = False
 
 
+    def get_ano_nascimento(self):
+        return self.ano_atual - self.idade
+
+
+    def get_name(self):
+        return self.nome
 
 # Tutorial disponível no YouTube, pelo canal 'Otávio Miranda'
 # Vídeo aula do tutorial: https://www.youtube.com/watch?v=RLVbB91A5-8&list=PLbIBj8vQhvm34qAAEEH_PdL2tMG9rz-P7&ab_channel=Ot%C3%A1vioMiranda
