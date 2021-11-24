@@ -46,7 +46,7 @@ def numbers_fuc(max_n):     #definindo funcao
 #--------------------------------------------------
 
 # Criando um gerador:
-def numbers_yeild(max_n):
+def numbers_yield(max_n):
     for n in range(max_n + 1):
         yield n
 
