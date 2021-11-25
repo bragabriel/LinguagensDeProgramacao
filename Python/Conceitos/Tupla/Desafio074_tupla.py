@@ -1,5 +1,5 @@
 # Desafio proposto pelo canal 'Curso em Vídeo | Gustavo Guanabara'
-# link: https://www.youtube.com/watch?v=0LB3FSfjvao&ab_channel=CursoemV%C3%ADdeo
+# link: https://www.youtube.com/watch?v=mlwt2CRQkTQ&list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-&index=75&ab_channel=CursoemV%C3%ADdeo
 
 from random import randint, random
 

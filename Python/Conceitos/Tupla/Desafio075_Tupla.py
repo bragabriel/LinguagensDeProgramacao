@@ -1,3 +1,6 @@
+# Tutorial disponível no YouTube, pelo canal 'Curso em Vídeo - Gustavo Guanabara'
+# Vídeo aula do tutorial: https://www.youtube.com/watch?v=1u7oA8ckjAc&list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-&index=77&ab_channel=CursoemV%C3%ADdeo
+
 n = (int(input('Digite um número: ')),
      int(input('Digite mais um número: ')),
      int(input('Digite outro um número: ')),
