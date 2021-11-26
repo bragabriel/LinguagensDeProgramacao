@@ -1,3 +1,6 @@
+# Tutorial disponível no YouTube, pelo canal 'Curso em Vídeo - Gustavo Guanabara'
+# Vídeo aula do tutorial: https://www.youtube.com/watch?v=Qp2cXfCHk2I&list=PLHz_AreHm4dksnH2jVTIVNviIMBVYyFnH&index=6&ab_channel=CursoemV%C3%ADdeo
+
 listagem = ('Lápis', 1.75,
          'Borracha', 2,
          'Caderno', 15.90,
