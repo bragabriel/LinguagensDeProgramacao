@@ -48,6 +48,13 @@ exemplo7 = [v for v in lista3 if v % 3 == 0 if v % 8 == 0]
 print(exemplo7)
 print('\nexemplo 7: ', exemplo7)
 
+exemplo7b = []
+for v in lista3:
+   if v % 3 == 0 and v % 8 == 0:
+        exemplo7b.append(v)
+
+print('\nexemplob 7: ', exemplo7b)
+
 # Se valor não for divisivel por 3 vai printar a msg 'Não'
 exemplo8 = [v if v % 3 == 0 else 'Não' for v in lista3]
 print('\nexemplo 8: ', exemplo8)

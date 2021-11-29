@@ -12,21 +12,22 @@ class Carro:
 
 # O método __str__() deve retornar uma representação em forma de string do valor do objeto.
 # __str__ é um método especial, como __init__, usado para retornar uma representação de string de um objeto.
-  def __str__(self):
-    return f"{self.marca}/{self.modelo} - Ano {self.ano}"
+  '''def __str__(self):
+    return f"{self.marca}/{self.modelo} - Ano {self.ano}"'''
 
 
-  def __repr__(self):
+def __repr__(self):
     return (
       f"Marca: {self.marca}\n"
-      f"Modelo: {self.modelo}\n"
+     f"Modelo: {self.modelo}\n"
       f"Ano: {self.ano}"
     )
 
 possante = Carro('Ferrari', 'F8 Tributo', '21')
 
-print(f'{possante}')
+print('possante: ', possante)
 
+print(f'{possante}')
 
 # Resumo:
 

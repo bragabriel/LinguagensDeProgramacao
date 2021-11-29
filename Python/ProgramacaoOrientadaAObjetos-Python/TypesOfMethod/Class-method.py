@@ -10,7 +10,7 @@ class Pessoa:
         print(self.ano_atual - self.idade)
 
     
-    @classmethod
+    @classmethod # Método da Classe = Static em Java
     def por_ano_nascimento(cls, nome, ano_nascimento):
     # cls (ou classe) = pois é um método da classe, ou seja, não está disponível em outras instâncias (objetos), apenas nessa classe.
  
