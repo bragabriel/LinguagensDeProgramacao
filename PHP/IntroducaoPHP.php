@@ -67,6 +67,29 @@ printNumero(100-50);
 
 
 //Classes:
-echo '<br><br>Classes: ';
+echo '<br><br>Classes:<br> ';
+
+class Pessoa{
+
+    public $nome;
+    public $idade;
+
+    public function __construct($nome, $idade){
+        $this->nome = $nome;
+        $this->idade = $idade;
+    }
+    
+    public function printPessoa(){
+        echo 'Nome: ', $this->nome;
+        echo'<br>';
+        echo 'Idade: ', $this->idade, '<br><br>';
+    }
+}
+
+$p1 = new Pessoa('Gabriel', '20');
+$p1->printPessoa();
+
+$p2 = new Pessoa('Teste', '100');
+$p2->printPessoa();
 
 ?>
