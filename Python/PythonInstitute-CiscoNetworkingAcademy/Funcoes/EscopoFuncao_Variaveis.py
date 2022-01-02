@@ -1,5 +1,11 @@
 #Entendendo o ESCOPO das váriaveis dentro das funções
 
+def hello(meu_nome,idade):
+   print('Olá',meu_nome,'\nSua idade é:',idade)
+   
+hello('Teste', 20)
+
+
 #  Uma variável existente fora de uma função tem um scope dentro dos corpos das funções.
 
 def my_function():
@@ -7,7 +13,6 @@ def my_function():
 
 var = 1
 my_function()
-
 
 
 #  Uma variável existente fora de uma função tem um scope dentro dos corpos das funções, 
