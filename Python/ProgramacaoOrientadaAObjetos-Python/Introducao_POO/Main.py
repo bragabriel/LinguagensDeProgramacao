@@ -1,5 +1,5 @@
-from Aluno import Alunoo 
+from aluno import *
 
-aluno1 = Alunoo()
+Aluno1 = Aluno()
 
-aluno1.
+Aluno1.

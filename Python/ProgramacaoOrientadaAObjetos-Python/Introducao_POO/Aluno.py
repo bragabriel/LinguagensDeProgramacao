@@ -1,6 +1,5 @@
 #Classe:
-class Alunoo:
-    
+class Aluno():
     notaA1 = 0
     notaA2 = 0
     media = 0
@@ -8,22 +7,25 @@ class Alunoo:
         
 #Métodos:
 def set_nome(self, nome):
-    
     #Condicionando o NOME à ser uma String
     if(type(nome)==type(str())):
-        self._nome = nome
+        self.__nome = nome
     else:
         print('Nome deve ser uma String!')
+    
+def get_nome(self):
+    return self.__nome
     
 def set_ra(self, ra):
     #Condicionando o R.A à ser um INT
     if(type(ra)==type(int())):
-        self._ra =ra
+        self.__ra =ra
     else:
         print('R.A deve ser um Número Inteiro!')
         
 def set_notaA1(self, notaA1):
     self.notaA1 = notaA1
+    
     
 def set_notaA2(self, notaA2):
     self.notaA2 = notaA2
@@ -60,5 +62,5 @@ def getDadosAluno(self):
     
     
     #Atributo PRIVADO:
-    _nome = property(set_nome)
-    _ra = property(set_ra)
+    nome = property(set_nome)
+    ra = property(set_ra)

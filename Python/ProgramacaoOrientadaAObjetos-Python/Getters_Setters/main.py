@@ -36,6 +36,7 @@ print()
 produto1 = Produto('CAMISETA', 50)
 produto1.desconto(50)
 print('Produto 1:', produto1.nome, '\tPreço:', produto1.preco, '\n')
+produto1.s
 
 produto2 = Produto('CaNecA', 'R$15')
 produto2.desconto(10)
