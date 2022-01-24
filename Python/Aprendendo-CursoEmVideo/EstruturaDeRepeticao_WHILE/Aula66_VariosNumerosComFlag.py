@@ -2,7 +2,7 @@ v = 0
 soma = 0
 i = 0
 
-while True:
+while (True):
     v = int(input('Digite um valor (999 para parar):'))
     if(v==999):
         break
