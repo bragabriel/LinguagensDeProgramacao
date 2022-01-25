@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com Links</title>
+    <title>Mídias em HTML5</title>
 </head>
 <body>
-    <h1>Usando links externos</h1>
-    <p>Você pode acessar o meu <a href="https://github.com/bragabriel">repositório público no GitHub</a></p>
-    <p>Você pode acessar o meu <a href="https://github.com/bragabriel" target="_blank" rel="external">repositório público no GitHub</a></p>
-    <!--        target = "_blank" : nova janela em branco         rel = "external" : link do tipo externo-->
-    
-    <h2>Usando links internos</h2>
-    <p>Acesse a segunda página do site <a href="page02.html" target="_self" rel="next">aqui</a></p>
-<!--        target = "_blank" : mesma janela         rel = "next" : link para a próxima página      -->
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
 
-    <p>Esta página é um oferecimento do <a href="https://youtube.com" target="_blink" rel="nofollow">YouTube</a>
-    </p>
+    <picture> <!--Tag picture = permite que crie vários SRC -->
+        <!--
+            Acima dela são os sources do maior para o menor
+            A base é a imagem padrão
+        -->
+        <source media="(max-width: 750px)" srcset="imgs/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/foto-m.png" type="image/png"> <!--Por padrão, carrega a imagem "foto-g.png", mas se o navegador
+        tiver seu display tiver menos que 1050px, ele carregará a foto-m.png-->
+        <img src="imgs/foto-g.png" alt="Imagem flexível">
+    </picture>
 
-    <h1>Links para download</h1>
-    <ul>
-        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
-        <li><a href="livro/meulivro.rar" download="meulivro.rar" type="application/rar">Baixar o livro em rar</a></li>
-    </ul>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
 </body>
 </html>
