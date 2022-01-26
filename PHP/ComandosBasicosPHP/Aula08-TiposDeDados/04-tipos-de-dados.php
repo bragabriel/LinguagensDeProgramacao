@@ -1,5 +1,20 @@
 <?php
 
+
+/*
+gettype() - Retorna o tipo da variável.
+var_dump() – Retorna o tipo e o valor.
+
+is_int() – Verifica se a variável em questão é do tipo integer.
+is_bool() – Verifica se a variável em questão é do tipo boolean.
+is_numeric() – Verifica se a variável em questão é uma string numérica, ex "100".
+is_string() – Verifica se a variável em questão é do tipo string.
+is_float() – Verifica se a variável em questão é do tipo flutuante.
+is_array() – Verifica se a variável em questão é do tipo Array.
+is_object() – Verifica se a variável em questão é do tipo objeto.
+*/
+
+
 /* -------------------------- */
 /* Tipos de dados "Escalares" */
 /* -------------------------- */
@@ -69,9 +84,6 @@ $teste = print_r($carros, true);
 echo "<br>Valor do array \$carros: $teste <br>";
 print_r ($carros, "<br>");
 
-
-
-
 if(is_array($carros)):
     echo "É um array!";
 else:
@@ -80,17 +92,33 @@ endif;
 
 echo "<hr>";
 
-/*
-gettype() - Retorna o tipo da variável.
-var_dump() – Retorna o tipo e o valor.
+//object:
+class Cliente{
+    public $nome;
+    public function atribuirNome($nome){
+        $this->nome = $nome;
+    }
+}
 
-is_int() – Verifica se a variável em questão é do tipo integer.
-is_bool() – Verifica se a variável em questão é do tipo boolean.
-is_numeric() – Verifica se a variável em questão é uma string numérica, ex "100".
-is_string() – Verifica se a variável em questão é do tipo string.
-is_float() – Verifica se a variável em questão é do tipo flutuante.
-is_array() – Verifica se a variável em questão é do tipo Array.
-is_object() – Verifica se a variável em questão é do tipo objeto.
-*/
+$cliente = new Cliente();
+$cliente->atribuirNome("Gabriel");
+var_dump($cliente);
+
+if(is_object($cliente)):
+    echo "É um objeto!";
+else:
+    echo "Não é um objeto!";
+endif;
+
+echo "<hr>";
+
+
+/* -------------------------- */
+/* Tipos de dados "Especiais" */
+/* -------------------------- */
+
+//NULL
+$cidade = NULL;
+var_dump($cidade);
 
 ?>
