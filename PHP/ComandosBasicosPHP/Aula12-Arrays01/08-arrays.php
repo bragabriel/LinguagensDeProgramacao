@@ -37,3 +37,34 @@ print_r($motos);
 $clientes = ["Rodrigo", "Felipe", "Bia"];
 print_r($clientes);
 echo "<hr>";
+
+
+//----------------------
+
+
+//Count
+echo "<br>Count:<br>";
+echo count($carros), "<br>";
+echo count($motos), "<br>";
+echo count($clientes), "<br>";
+
+$totalClientes = count($clientes);
+echo "$totalClientes", "<br>";
+echo "<hr>";
+
+//Foreach
+echo "<br>";
+foreach($carros as $valor){ //para cada elemento do array $carros, será atribuído a variável $valor
+                            //em cada repetição, o elemento de $carros será atribuído para a variável $valor e exibimos o valor. Depois volta para o segundo laço, terceiro...
+    echo $valor."<br>";
+}
+
+echo "<br>";
+foreach($motos as $valor){ 
+    echo $valor."<br>";
+}
+
+echo "<br>";
+foreach($clientes as $valor){ 
+    echo $valor."<br>";
+}
