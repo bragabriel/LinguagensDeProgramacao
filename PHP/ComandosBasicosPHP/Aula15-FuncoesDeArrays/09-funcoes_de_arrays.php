@@ -33,10 +33,11 @@ else{
 
 echo "<br><hr>";
 //---------------------------------
-// array_keys($array) = Retorna um novo array com as chaves do array passado
+// array_keys($array) = Retorna um novo array com as chaves (ÍNDICES) do array passado como parâmetro
 echo("Array \$nomes: ");
 print_r($nomes);
 echo "<br>";
+
 echo("Array \$keys: ");
 $keys = array_keys($nomes);
 print_r($keys);
@@ -60,11 +61,98 @@ echo("Array \$nomes: ");
 print_r($nomes2);
 echo "<br>";
 $values = array_values($nomes2);
-echo("Array \$values: ");
+echo("Array \$<ins>VALUES</ins>: ");
 print_r($values);
 
 
 echo "<br><hr>";
 //---------------------------------
 // array_merge($array1, $array2) = Agrega o conteúdo de dois arrays
+$carros = array("Camaro", "Uno", "Gol");
+$motos = array("50cc", "cb1000", "kawasaki 750");
+
+echo("Array \$carros: ");
+print_r($carros);
+echo "<br>";
+
+echo("Array \$motos: ");
+print_r($motos);
+echo "<br>";
+
+$veiculos = array_merge($carros, $motos);
+echo("Array <ins>MERGE</ins>\$veiculos: ");
+print_r($veiculos);
+
+
+echo "<br><hr>";
+//---------------------------------
+// array_pop($array) = Exclui a ÚLTIMA posição do array
+echo("Array \$carros: ");
+print_r($carros);
+echo "<br>";
+
+echo("Array <ins>POP</ins> \$carros: ");
+array_pop($carros);
+print_r($carros);
+echo "<br>";
+
+
+echo "<br><hr>";
+//---------------------------------
+// array_shift($array) = Exclui a PRIMEIRA posição do array
+echo("Array \$carros: ");
+print_r($carros);
+echo "<br>";
+
+echo("Array <ins>SHIFT</ins> \$carros: ");
+array_shift($carros);
+print_r($carros);
+echo "<br>";
+
+
+echo "<br><hr>";
+//---------------------------------
+// array_unshift($array, "valor1", "valor2") = Adiciona um ou mais elementos no INÍCIO do array
+$frutas = array("Uva", "Laranja", "Maçã");
+echo("Array \$frutas: ");
+print_r($frutas);
+echo "<br>";
+
+echo("Array <ins>UNSHIFT</ins> \$frutas: ");
+array_unshift($frutas, "Manga", "Acerola", "Morango");
+print_r($frutas);
+echo "<br>";
+
+
+echo "<br><hr>";
+//---------------------------------
+// array_push($array, "valor1", "valor2") = Adiciona um ou mais elementos no FINAL do array
+$frutas = array("Uva", "Laranja", "Maçã");
+echo("Array \$frutas: ");
+print_r($frutas);
+echo "<br>";
+
+echo("Array <ins>PUSH</ins> \$frutas: ");
+array_push($frutas, "Manga", "Acerola", "Morango");
+print_r($frutas);
+echo "<br>";
+
+
+echo "<br><hr>";
+//---------------------------------
+// array_combine($array, "valor1", "valor2") = Mescla dois arrays
+$keys = array("Campeão", "Vice", "Terceiro");
+$values = array("Vasco", "Flamengo", "Botafogo");
+
+echo("Array \$keys: ");
+print_r($keys);
+echo "<br>";
+
+echo("Array \$values: ");
+print_r($values);
+echo "<br>";
+
+$times = array_combine($keys, $values);
+echo("Array <ins>COMBINE</ins> \$times: ");
+print_r($times);
 ?>
