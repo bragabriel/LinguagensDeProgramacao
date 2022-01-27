@@ -2,11 +2,19 @@
 
 //Arrays
 
+//-----------------------------
+// Array numérico
+//-----------------------------
+
+// Um array é numérico quando os índices ou chaves são INTEIROS
+$carros3 = array(1=>"Camaro", 2=>"Mustang", 3=>"Porsche"); 
+
+
 //Exemplo 01:
 $carros = array("BMW", "Veloster", "Hilux");
 
 //Inserindo nos determinados índices
-$carros2 = array(1=>"BMW", 2=>"Veloster", 3=>"Hilux");
+$carros2 = array(1=>"BMW", 2=>"Veloster", 3=>"Hilux"); 
 
 echo "<br>";
 print_r($carros);
@@ -39,8 +47,7 @@ print_r($clientes);
 echo "<hr>";
 
 
-//----------------------
-
+//------------------------------
 
 //Count
 echo "<br>Count:<br>";
@@ -68,3 +75,6 @@ echo "<br>";
 foreach($clientes as $valor){ 
     echo $valor."<br>";
 }
+echo "<br><hr>";
+
+?>
