@@ -167,6 +167,36 @@ echo("Array <ins>SUM</ins> \$soma: $total");
 
 echo "<br><br><hr>";
 //---------------------------------
-// array_sum() = Calcula a soma dos elementos de um array
+// explode("divisor (/)", "String") = Transforma uma STRING em um ARRAY
+$data = "27/01/2022";
+echo ("String \$data: $data");
+echo "<br>";
+
+$novaData = explode("/", $data);
+echo("Array <ins>EXPLODE</ins> \$novaData: ");
+print_r($novaData);
+echo "<br><br>";
+
+$frase = "Meu nome não é Johnny";
+echo ("String \$frase: $frase");
+echo "<br>";
+
+$arrayFrase = explode(" ", $frase);
+echo("Array <ins>EXPLODE</ins> (String vira Array) \$frase: ");
+print_r($arrayFrase);
+echo "<br>";
+
+
+echo "<br><br><hr>";
+//---------------------------------
+// implode("divisor (/)", "String") = Transforma um ARRAY em uma STRING
+$nomes = array("Gabriel", "Carlos", "Neusa", "Barnabé");
+echo("Array \$nomes: ");
+print_r($nomes);
+echo "<br>";
+
+$string = implode(", ", $nomes);
+echo ("Array <ins>IMPLODE</ins> (Array vira String) \$nomes: $string");
+echo "<br>";
 
 ?>
