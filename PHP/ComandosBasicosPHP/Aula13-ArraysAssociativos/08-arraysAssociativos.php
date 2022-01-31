@@ -9,7 +9,8 @@ $pessoa = array("nome"=>"Gabriel", "idade"=>23, "altura"=>1.75);
 
 
 $pessoa["cidade"] = "Pirassununga"; // adicionando +1 índice (cidade) com o valor "Pirassununga" no array
-
+$pessoa[] = "teste";
+$pessoa[] = "teste2";
 //echo $pessoa["altura"];
 
 foreach($pessoa as $indice => $valor){
