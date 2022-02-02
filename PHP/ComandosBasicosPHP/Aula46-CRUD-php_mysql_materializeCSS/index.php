@@ -40,6 +40,8 @@ include_once 'includes/message.php';
                     //                      "conexão", "consultaSQL"
                     $resultado = mysqli_query($connect, $sql);
 
+                    if(mysqli_num_rows($resultado) > 0):
+
                     //Abrindo WHILE
                     //Variável $dados recebe todos os dados de $resultado ($resultado é a consulta ao Banco de Dados)
                     while($dados=mysqli_fetch_array($resultado)):
@@ -66,7 +68,8 @@ include_once 'includes/message.php';
                             <form action="php_action/delete.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
                                 <button type="submit" name="btn-deletar" class="btn red">Sim, quero deletar</button>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                                <a href="#!"
+                                    class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
                             </form>
                         </div>
                     </div>
@@ -75,6 +78,21 @@ include_once 'includes/message.php';
                 <?php
                     //Fechando WHILE
                     endwhile; 
+                    
+                    //Continuação do IF da linha 43
+                else: ?>
+
+                <!--Linhas vazias caso não haja cadastros no Banco para ser exibido-->
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+                <?php
+                    //Fechando IF da linha 43
+                    endif;
                 ?>
 
             </tbody>

@@ -10,22 +10,22 @@ include_once 'includes/header.php';
         <h3 class="light">Novo Cliente</h3>
         <form action="php_action/create.php" method="POST">
             <div class="input-field col s12">
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" pattern="[a-zA-Z0-9]+">
                 <label for="nome">Nome</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" name="sobrenome" id="nsobreome">
+                <input type="text" name="sobrenome" id="sobrenome" pattern="[a-zA-Z0-9]+">
                 <label for="sobrenome">Sobrenome</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" pattern="[a-zA-Z0-9]+">
                 <label for="email">E-mail</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" name="idade" id="idade">
+                <input type="number" name="idade" id="idade">
                 <label for="idade">Idade</label>
             </div>
 
