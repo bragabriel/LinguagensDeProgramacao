@@ -11,10 +11,7 @@ if(isset($_POST['btn-editar'])){
 
     //Atribuindo os dados que vieram do form para variáveis:
             //filtrando para evitar ataques SQL Injection
-    $nome = filter_input(INPUT_POST, $_POST['nome'], FILTER_SANITIZE_SPECIAL_CHARS);
-    $nome = mysqli_escape_string($connect, $nome);
-
-    //$nome = mysqli_escape_string($connect, $_POST['nome']);
+    $nome = mysqli_escape_string($connect, $_POST['nome']);
     $sobrenome = mysqli_escape_string($connect, $_POST['sobrenome']);
     $email = mysqli_escape_string($connect, $_POST['email']);
     $idade = mysqli_escape_string($connect, $_POST['idade']);

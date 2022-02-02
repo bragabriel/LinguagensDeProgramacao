@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Fev-2022 às 17:48
+-- Generation Time: 02-Fev-2022 às 19:45
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -43,10 +43,9 @@ CREATE TABLE `clientes` (
 INSERT INTO `clientes` (`id`, `nome`, `sobrenome`, `email`, `idade`) VALUES
 (1, 'João', 'Joanildo', 'joao@gmail.com', 12),
 (2, 'Gabriel', 'Braga da Silva', 'gabriel.bragasilva@hotmail.com', 20),
-(3, 'Joana', 'Joanilda', 'joana@anajo.com', 32),
-(5, '105 or 1=1', '105 or 1=1', '105 or 1=1', 2332),
-(6, '<button>Olá Mundo</button>', '<button>Olá Mundo</button>', 'asd@asd', 1),
-(8, 'Teste', 'Teste', 'teste', 23);
+(3, 'Joana', 'Joanilda', 'joana@anajo.com', 20),
+(9, '&lt;button&gt;teste&lt;/button&gt;', 'asdasd', 'asd@gmail.com', 32),
+(18, 'Gabriel', 'Braga', 'bi.rioclaro@hotmail.com', 23);
 
 --
 -- Indexes for dumped tables
@@ -66,7 +65,7 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT for table `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
