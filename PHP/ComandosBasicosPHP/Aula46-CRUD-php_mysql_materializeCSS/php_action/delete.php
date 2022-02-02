@@ -7,27 +7,19 @@ session_start();
 require_once 'db_connect.php';
 
 //Verificando se o usuário clicou no botão de índice/name = btn-editar
-if(isset($_POST['btn-editar'])){
+if(isset($_POST['btn-deletar'])){
 
-    //Atribuindo os dados que vieram do form para variáveis:
-            //filtrando para evitar ataques SQL Injection
-    $nome = filter_input(INPUT_POST, $_POST['nome'], FILTER_SANITIZE_SPECIAL_CHARS);
-    $nome = mysqli_escape_string($connect, $nome);
-
-    //$nome = mysqli_escape_string($connect, $_POST['nome']);
-    $sobrenome = mysqli_escape_string($connect, $_POST['sobrenome']);
-    $email = mysqli_escape_string($connect, $_POST['email']);
-    $idade = mysqli_escape_string($connect, $_POST['idade']);
+    //Atribuindo os dados que vieram do form através do método POST:
     $id = mysqli_escape_string($connect, $_POST['id']);
 
     //Inserindo os dados das variáveis no Banco de Dados na tabela 'clientes':
-    $sql = "UPDATE clientes SET nome = '$nome', sobrenome = '$sobrenome', email = '$email', idade = '$idade' WHERE id = '$id'";
+    $sql = "DELETE FROM clientes WHERE id = '$id'";
 
     //Verificando se a query(comando sql) foi executada com sucesso:
     if(mysqli_query($connect, $sql)){
 
         //Criando uma sessão chamada 'mensagem'
-        $_SESSION['mensagem'] = "Cliente atualizado com sucesso!";
+        $_SESSION['mensagem'] = "Deletado com sucesso!";
 
         //Se deu certo, retornaremos para a index.php, passando como parâmetro através do link a string: "sucesso"
         header('Location: ../index.php?sucesso');
@@ -35,7 +27,7 @@ if(isset($_POST['btn-editar'])){
     else{
 
         //Criando uma sessão chamada 'mensagem'
-        $_SESSION['mensagem'] = "ERRO ao atualizar!";
+        $_SESSION['mensagem'] = "ERRO ao deletadar!";
 
         //Se NÃO deu certo, retornaremos para a index.php, passando como parâmetro através do link a string: "erro"
         header('Location: ../index.php?erro');
