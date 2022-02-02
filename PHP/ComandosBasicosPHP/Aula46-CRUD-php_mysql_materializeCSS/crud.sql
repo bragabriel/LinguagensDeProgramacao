@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Fev-2022 às 19:45
+-- Generation Time: 02-Fev-2022 às 19:54
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -44,8 +44,7 @@ INSERT INTO `clientes` (`id`, `nome`, `sobrenome`, `email`, `idade`) VALUES
 (1, 'João', 'Joanildo', 'joao@gmail.com', 12),
 (2, 'Gabriel', 'Braga da Silva', 'gabriel.bragasilva@hotmail.com', 20),
 (3, 'Joana', 'Joanilda', 'joana@anajo.com', 20),
-(9, '&lt;button&gt;teste&lt;/button&gt;', 'asdasd', 'asd@gmail.com', 32),
-(18, 'Gabriel', 'Braga', 'bi.rioclaro@hotmail.com', 23);
+(9, '&lt;button&gt;teste&lt;/button&gt;', 'asdasd', 'asd@gmail.com', 32);
 
 --
 -- Indexes for dumped tables
