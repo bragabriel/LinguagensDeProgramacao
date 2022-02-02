@@ -3,9 +3,6 @@
 //Incluindo o header
 include_once 'includes/header.php';
 
-//Incluindo o footer
-include_once 'includes/footer.php';
-
 ?>
 
 <div class="row">
@@ -40,7 +37,6 @@ include_once 'includes/footer.php';
 </div>
 
 <?php 
-
-
-
+// Footer
+include_once 'includes/footer.php';
 ?>
