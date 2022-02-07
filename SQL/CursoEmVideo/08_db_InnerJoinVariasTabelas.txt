@@ -1,0 +1,28 @@
+************************************
+BANCO DE DADOS - CURSO EM VÍDEO
+TRABALHANDO COM INNER JOIN (VÁRIAS TABELAS)
+***********************************
+
+
+create table gafanhoto_assiste_curso(
+	id int not null auto_increment,
+	data date,
+    idgafanhoto int,
+    idcurso int,
+    primary key(id), -- chave primária dessa tabela
+    foreign key (idgafanhoto) references gafanhotos(id), -- FK idgafanhoto = PK na tabela gafanhotos(id)
+    foreign key (idcurso) references cursos(idcurso) -- FK idcurso = PK na tabela cursos(idcurso)
+)default charset = utf8;
+
+
+insert into gafanhoto_assiste_curso values
+	(default, '2014-03-01', '1', '2'); -- gafanhoto 1 começou a assistir o curso 2 no dia...
+
+    
+select * from gafanhoto_assiste_curso;
+
+
+select g.nome, c.nome from gafanhotos g 
+inner join gafanhoto_assiste_curso a on (g.id = a.idgafanhoto)
+inner join cursos c on (c.idcurso = a.idcurso) 
+order by g.nome;

@@ -1,0 +1,73 @@
+************************************
+BANCO DE DADOS - CURSO EM VÍDEO
+TRABALHANDO COM CHAVES ESTRANGEIRAS E JOIN
+***********************************
+
+
+Relacionamento 1-1: FK vai na tabela dominante
+
+Relacionamento 1-n: FK vai na tabela 'n'
+
+Relacionamento n-n: 
+
+O relacionamento entre eles vira entidade.
+ex: 
+cliente --n  compra  n-- produto
+
+cliente  1--n  compra  n--1  produto
+
+A PK do lado 1 vai para o lado n, ou seja:
+
+cliente  1--n  compra(fkcliente, fkproduto)  n--1  produto
+
+
+
+desc gafanhotos;
+
+
+alter table gafanhotos
+add cursopreferido int;
+
+
+-- adicionando FK cursopreferido referenciada à PK idcurso da tabela cursos
+alter table gafanhotos
+add foreign key (cursopreferido) references cursos(idcurso)
+
+
+-- adiciando o curso preferido (id6) ao Daniel(id1)
+update gafanhotos set cursopreferido = '6' where id = '1';
+
+
+
+select * from gafanhotos;
+select * from cursos;
+
+-- Juntando os dois selects de tabelas diferentes
+select nome, cursopreferido from gafanhotos;
+select nome, ano from cursos;
+
+-- Resultado:
+select gafanhotos.nome, cursos.nome, cursos.ano
+from gafanhotos inner join cursos on(cursos.idcurso = gafanhotos.cursopreferido)
+order by gafanhotos.nome; 
+
+
+-- Mesmo comando que de cima, mas utilizando o AS
+select g.nome, c.nome, c.ano
+from gafanhotos as g inner join cursos as c on(c.idcurso = g.cursopreferido)
+order by g.nome; 
+
+
+-- Mostrando os alunos inclusive os que não tem nenhum curso
+-- Left join, está dando preferencia a tabela da esquerda (gafanhotos)
+select g.nome, c.nome, c.ano
+from gafanhotos as g left outer join cursos as c on(c.idcurso = g.cursopreferido);
+
+
+-- Mostrando os cursos inclusive os que não tem nenhum aluno
+-- Right join, está dando preferencia a tabela da direita (cursos)
+select g.nome, c.nome, c.ano
+from gafanhotos as g right join cursos as c on(c.idcurso = g.cursopreferido);
+
+
+
