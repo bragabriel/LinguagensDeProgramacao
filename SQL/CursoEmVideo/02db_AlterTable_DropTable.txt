@@ -1,0 +1,80 @@
+************************************
+BANCO DE DADOS - CURSO EM VÍDEO
+TRABALHANDO COM ALTER TABLE
+***********************************
+
+describe pessoas;
+desc pessoas;
+
+
+-- Adicionando colunas na tabela:
+
+alter table pessoas
+add column profissao varchar(10);
+
+
+-- Removendo uma coluna:
+
+alter table pessoas
+drop column profissao;
+
+
+-- Adicionando coluna na posição escolhida:
+
+alter table pessoas
+add column profissao varchar(10) after nome;
+-- 								depois da coluna 'nome'
+
+
+alter table pessoas
+add column codigo int first;
+-- 				Inserindo como o primeiro campo
+
+
+-- Alterando a estrutura da definição:
+alter table pessoas
+modify column profissao varchar(22);
+
+
+
+-- Renomeando coluna:
+alter table pessoas
+change column profissao prof varchar(20);
+
+
+-- Renomeando a tabela:
+alter table pessoas
+rename to gafanhotos;
+
+
+
+create table if not exists cursos(
+	nome varchar(30) not null unique,
+    descricao text,
+    carga int unsigned,
+    totaulas int,
+    ano year default '2016'
+) default charset=utf8;
+
+-- add idcurso como primeira coluna na tabela cursos
+alter table cursos add column idcurso int first;
+
+-- add chave primaria na tabela cursos
+alter table cursos
+add primary key (idcurso);
+
+
+create table if not exists teste(
+	id int,
+    nome varchar(10),
+    idade int
+);
+
+insert into teste
+ value ('1', 'Gabriel', '20'),
+ ('2', 'Maria', '22'),
+ ('3', 'Pedro', '33');
+ 
+ select * from teste; 
+ 
+ drop table if exists teste;
