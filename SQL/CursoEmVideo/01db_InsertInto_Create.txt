@@ -1,0 +1,49 @@
+************************************
+BANCO DE DADOS - CURSO EM VÍDEO
+TRABALHANDO COM INSERT INTO E CREATE
+***********************************
+
+-- DDL = Data Definition Language = create database, create table...
+-- DML = Data Manipulatio Language = insert into, select, update...
+CREATE DATABASE cadastro
+default character set utf8
+default collate utf8_general_ci;
+
+
+create table pessoas(
+	id int not null auto_increment,
+	nome varchar(30) not null,
+    nascimento date,
+    sexo enum('M', 'F'),
+    peso decimal(5,2),
+    altura decimal(3,2),
+    nacionalidade varchar(20) default 'Brasil',
+    primary key(id)
+    ) default charset = utf8;
+    
+    
+insert into pessoas(nome, nascimento, sexo, peso, altura, nacionalidade) 
+values ('Godofredo', '1999-01-02', 'M', '78.5', '1.83', 'Brasil');
+
+
+insert into pessoas(nome, nascimento, sexo, peso, altura, nacionalidade)
+values ('Joana', '1998-02-03', 'F', '68.2', '1.67', 'Brasil');
+
+
+insert into pessoas(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values (DEFAULT, 'Douglas', '2008-02-03', 'M', '76.2', '1.9', 'Argentina');
+
+
+-- Podemos também inserir como abaixo, mas é necessário inserir todos os dados:
+insert into pessoas values (DEFAULT, 'Adalgiza', '2000-02-03', 'M', '76.2', '1.9', 'Bolívia');
+
+
+insert into pessoas values
+(DEFAULT, 'Cláudio', '1985-01-18', 'M', '99.0', '2.15', 'Brasil'),
+(default, 'Pedro', '1973-05-23', 'M', '89.0', '1.87', default),
+(default, 'John', '1975-02-22', 'M', '91.0', '2', 'EUA');
+
+
+select * from pessoas;
+
+
