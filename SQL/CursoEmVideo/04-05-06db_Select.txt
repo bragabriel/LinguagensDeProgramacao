@@ -1,0 +1,111 @@
+************************************
+BANCO DE DADOS - CURSO EM VÍDEO
+TRABALHANDO COM SELECT
+***********************************
+
+SELECT * FROM cursos
+ORDER BY nome DESC;
+
+
+DESC cursos;
+
+
+SELECT ano, nome, carga FROM cursos
+ORDER BY ano;
+
+DESC cursos;
+
+select * from cursos
+where ano  = '2016'
+order by nome;
+
+
+select nome, descricao, ano from cursos
+where ano <= 2015
+order by ano;
+
+
+select nome, ano from cursos
+where ano between 2014 and 2016
+order by ano desc, nome;
+
+
+select nome, descricao, ano from cursos
+where ano in (2014, 2016, 2020)
+order by ano;
+
+
+select nome, carga, totaulas from cursos
+where carga > 35 and totaulas < 30;
+
+
+select * from cursos
+where nome LIKE '%A%';
+
+
+select * from cursos
+where nome like 'ph%p%'
+
+
+select * from cursos
+where nome like 'ph%p_'
+
+
+select * from cursos
+where nome like 'p__t%';
+
+
+select distinct carga from cursos
+order by carga;
+
+
+select count(*) from cursos
+where carga > 40;
+
+
+select max(carga) from cursos;
+
+
+select nome, max(totaulas) from cursos where ano = '2016';
+
+
+select nome, min(totaulas) from cursos where ano = '2016';
+
+
+select sum(totaulas) from cursos where ano = '2016';
+
+
+select avg(totaulas) from cursos where ano = '2016';
+
+
+select totaulas, count(*) from cursos
+
+
+select carga from cursos
+group by carga;
+
+
+select totaulas, count(*) from cursos
+group by totaulas
+order by totaulas;
+
+
+select carga, totaulas, count(nome) from cursos where totaulas = 30
+group by carga;
+
+
+select carga, count(nome) from cursos
+group by carga
+having count(nome) > 3;
+
+
+select ano, count(*) from cursos
+group by ano
+having ano > 2013
+order by count(*) desc;
+
+
+select carga, count(*) from cursos
+where ano > '2015'
+group by carga
+having carga > (select avg(carga) from cursos);
