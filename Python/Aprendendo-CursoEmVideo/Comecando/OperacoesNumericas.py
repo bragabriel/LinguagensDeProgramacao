@@ -15,5 +15,5 @@ div = n1/n2
 divI = n1//n2
 
 print('\n')
-print('Esse é um print geral com tudo\nTem a soma: {}\nTem a multiplicação: {}'.format(soma, sub, mult))
+print('Esse é um print geral com tudo\nTem a soma: {}\n Tem a subtração: {}\n Tem a multiplicação: {}'.format(soma, sub, mult))
 print('Tem a divisão{}\nTem a divisão inteira{}\nTem a potência{}\n'.format(div, divI, expo))
