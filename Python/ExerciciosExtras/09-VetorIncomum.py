@@ -13,8 +13,7 @@ print("Vetor 02: ", vet2)
 print("Números incomuns: ", set(vet1) ^ set(vet2))
 # print("Números incomuns", set(vet1) - set(vet2) and set(vet2) - set(vet1))
 
-'''
-sets (conjuntos): {}
+''' sets (conjuntos): {}
     p1 | p2  OU  p1.union(p2) -> união (Elementos do primeiro mais o segundo eliminando as repetições)
     p1 & p2  OU  p1.intersection(p2) -> Intersecção (Elementos que estão em um conjunto & no outro conjunto)
     p1 - p2  OU  p1.difference(p2) -> Diferença (Elementos que tem em um mas não tem no outro)
@@ -37,5 +36,4 @@ sets (conjuntos): {}
     clear:
     p1.clear //Limpando o conjunto
     
-    OBS: Conjuntos não tem elementos repetidos.
-'''
+    OBS: Conjuntos não tem elementos repetidos. '''
