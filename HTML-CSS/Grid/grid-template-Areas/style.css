@@ -16,7 +16,7 @@ html, body{
     grid-template-areas: 
     "h h"
     "m a"
-    "f f"
+    "f ."
     ;
     
 /* grid-template-areas:    
