@@ -13,10 +13,19 @@ html, body{
     height: 100vh; /*view width*/
 
     display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /*
     grid-template-columns: 20px 20px 20px;
     grid-template-rows: 20px 20px 20px;
+    */
 
     grid-gap: 5px;
+
+
+    /*------------------------------------------------------*/
+    /* Content -> Alinha em relação ao espaço total do GRID */
 
     justify-content: center;
     /* Horizontal:
@@ -33,8 +42,35 @@ html, body{
     space-around -> espaço igual ao redor deles
     space-evenly -> espaço continuo (mesmo tanto de espaço para eles)
     */
+
+
+    /*------------------------------------------------------*/
+    /* Items -> Alinha em relação ao espaço da Célula */
+
+    justify-items: end ;
+    /* Horizontal 
+    justify-items: start - center - end - stretch(pos padrão); 
+    */
+
+
+    align-items: start ;
+    /* Vertical 
+    justify-items: start - center - end - stretch(pos padrão); 
+    */
 }
 
 .container > div{
     background-color: #7159c1;
+    width: 50%;
+    height: 50%;
 }
+
+.center{
+
+    /*------------------------------------------------------*/
+    /* Items -> Alinha a si mesmo em relação a célula que ele habita */
+
+    justify-self: center;
+    align-self: center;
+}
+
