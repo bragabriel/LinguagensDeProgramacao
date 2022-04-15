@@ -6,12 +6,16 @@ colocando o que queremos onde queremos
 - Divisão de toda a página em linhas e colunas
 - Colocar elementos onde quiser nessa Divisão
 
+---
+
 ## GRID OU FLEXBOX?
 - Grid: Duas dimensões (Colunas e Linhas)
 - FlexBox: Uma dimensão (Ou Coluna Ou Linha)
 
--> Um complementa o outro
-obs: Verificar quais navegadores ainda não aceitam GRID.
+-> Um complementa o outro. <br>
+Obs: Verificar quais navegadores ainda não aceitam GRID.
+
+---
 
 ## Propriedades:
 Vamos separar em dois grupos: 'container' e 'item(s)'
@@ -25,7 +29,7 @@ Vamos separar em dois grupos: 'container' e 'item(s)'
     - grid-column-gap; (espaçamentos em colunas).
 - grid-template-areas; (delimita áreas).
 
-... e mais 4 propriedades e **alinhamento**
+... e mais 4 propriedades e (alinhamento)[]
 
 <br>
 
@@ -39,7 +43,10 @@ Vamos separar em dois grupos: 'container' e 'item(s)'
     - grid-row-end;
 - grid-area; (vai dizer onde fica o item na área).
 
-... e mais 4 propriedades e **alinhamento**
+... e mais 4 propriedades e (alinhamento)[]
+
 <br>
+
+---
 
 #### Vídeo-Aula do tutorial disponível em: [Desvendando o CSS Grid na prática | Mayk Brito](https://www.youtube.com/watch?v=HN1UjzRSdBk&ab_channel=Rocketseat)
