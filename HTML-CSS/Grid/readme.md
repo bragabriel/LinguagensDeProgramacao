@@ -29,7 +29,7 @@ Vamos separar em dois grupos: 'container' e 'item(s)'
     - grid-column-gap; (espaçamentos em colunas).
 - grid-template-areas; (delimita áreas).
 
-... e mais 4 propriedades e (alinhamento)[]
+... e mais 4 propriedades e [**alinhamento**](https://github.com/bragabriel/LinguagensDeProgramacao/blob/main/HTML-CSS/Grid/Propriedades-Alinhamento.md)
 
 <br>
 
@@ -43,7 +43,7 @@ Vamos separar em dois grupos: 'container' e 'item(s)'
     - grid-row-end;
 - grid-area; (vai dizer onde fica o item na área).
 
-... e mais 4 propriedades e (alinhamento)[]
+... e mais 4 propriedades e [**alinhamento**](https://github.com/bragabriel/LinguagensDeProgramacao/blob/main/HTML-CSS/Grid/Propriedades-Alinhamento.md)
 
 <br>
 
