@@ -1,0 +1,40 @@
+/* Reset */
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    background-color: black;
+    width: 100vw; /*view height*/
+    height: 100vh; /*view width*/
+
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px;
+
+    grid-gap: 5px;
+
+    justify-content: center;
+    /* Horizontal:
+    justify-content: start - center - end - stretch(pos padrão);
+    space-between -> espaço igual entre eles
+    space-around -> espaço igual ao redor deles
+    space-evenly -> espaço continuo (mesmo tanto de espaço para eles)
+    */
+
+    align-content: flex-start;
+    /* Vertical:
+    align-content: start - center - end - stretch(pos padrão); 
+    space-between -> espaço igual entre eles
+    space-around -> espaço igual ao redor deles
+    space-evenly -> espaço continuo (mesmo tanto de espaço para eles)
+    */
+}
+
+.container > div{
+    background-color: #7159c1;
+}
