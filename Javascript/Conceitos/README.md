@@ -1,3 +1,3 @@
 # Aprimorando-Conhecimentos :mag_right:
 
-### Repositório criado para estudo na linguagem de programação 'Javascript'.  :heavy_check_mark:
+### Revisando e estudando diversos conceitos da linguagem de programação JavaScript.  :heavy_check_mark:
