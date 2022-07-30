@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        .sucata-background {
+            background-color: #ecf2f6;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-sucata {
+            background-color: #ecf2f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+
+        /* Azul */
+        .form-sucata {
+            width: 80%;
+        }
+
+        .form-sucata input,
+        textarea,
+        option,
+        select {
+            border-radius: 4px;
+            background-color: #ffffff;
+            border-color: #8495A2;
+            padding: 0.2em;
+            padding-left: 3%;
+            border-style: double;
+            border-width: 1px;
+        }
+
+        input[name="nome"],
+        input[name="empresa"],
+        input[name="cidade"],
+        select[name="estado"],
+        input[name="telefone"],
+        input[name="email"],
+        input[name="Fazeruploaddeimagem"],
+        textarea[name="txtArea"] {
+            width: 95%;
+            height: 35px;
+        }
+
+        fieldset {
+            width: 55%;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .io {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sucata-background">
+        <h1>Treinando o alinhamento e estilização de elementos em Formulários</h1>
+
+        <div class="form-sucata">
+            <fieldset>
+                <span class="wpcf7-form-control-wrap" data-name="nome"><input type="text" name="nome" value="" size="40"
+                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                        aria-invalid="false" placeholder="Nome Completo *"></span>
+            </fieldset>
+
+            <fieldset><span class="wpcf7-form-control-wrap" data-name="empresa"><input type="text" name="empresa"
+                        value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                        aria-required="true" aria-invalid="false" placeholder="Empresa"></span>
+            </fieldset>
+
+
+            <fieldset>
+                <div class="io">
+                    <span class="wpcf7-form-control-wrap" data-name="Cidade"><input type="text" name="cidade" value=""
+                            size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                            aria-required="true" aria-invalid="false" placeholder="Cidade"></span>
+
+                    <span class="wpcf7-form-control-wrap" data-name="estado"><select name="estado"
+                            class="wpcf7-form-control wpcf7-select" aria-invalid="false">
+                            <option value="" disabled selected>Estado</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                            <option value="DF">DF</option>
+                        </select>
+                    </span>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="io">
+                    <span class="wpcf7-form-control-wrap" data-name="tel-924"><input type="tel" name="telefone" value=""
+                            size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel phone"
+                            aria-invalid="false" placeholder="Telefone" maxlength="15"></span>
+
+
+                    <span class="wpcf7-form-control-wrap" data-name="your-email"><input type="email" name="email"
+                            value="" size="40"
+                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                            aria-required="true" aria-invalid="false" placeholder="E-mail"></span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <span class="wpcf7-form-control-wrap"><textarea id="w3review" name="txtArea" rows="50" cols="50"
+                        placeholder="Qual tipo de sucata e quantidade você possui para nos vender?"></textarea></span>
+            </fieldset>
+
+            <fieldset>
+                <label>Fazer upload de imagem</label> <br>
+                <span class="wpcf7-form-control-wrap" data-name="Fazeruploaddeimagem"><input type="file"
+                        name="Fazeruploaddeimagem" size="40" class="wpcf7-form-control wpcf7-file"
+                        accept=".gif,.jpg,.png,.svg" aria-invalid="false"></span></label><br>
+                <label>One file only.</label><br>
+                <label>200 MB limit.</label><br>
+                <label>Allowed types: gif, jpg, png, svg.</label>
+            </fieldset>
+
+
+            <fieldset>
+                <span class="wpcf7-form-control-wrap" data-name="checkbox-891">
+                    <span class="wpcf7-form-control wpcf7-checkbox">
+                        <span class="wpcf7-list-item first last">
+                            <input type="checkbox" name="checkbox"
+                                value="Aceito receber notícias e informações da xpto e seus produtos.">
+                            <span class="wpcf7-list-item-label"></span>
+                            <label>Aceito receber notícias e informações da xpto e seus produtos.</label>
+                        </span></span></span>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="Enviar" class="wpcf7-form-control has-spinner wpcf7-submit btn btn-env">
+                <span class="wpcf7-spinner"></span>
+            </fieldset>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
