@@ -27,7 +27,7 @@ print(troca.replace('Python', 'Braga da Silva\n'))
 print(troca, '\n')
 
 #Trocando palavra da Frase, e armazenando a nova frase no local da antiga
-troca = troca.replace('Python', 'gosta de hamburguerrrr!!!')
+troca = troca.replace('Python', 'gosta de lasanhaaaaaa!!!')
 print(troca)
 
 #Verificando se a palavra gosta está na frase 'troca'
@@ -48,4 +48,4 @@ dividido = lista.split()
 print(dividido[0])
 
 #Pegue a palavra[2] e mostre a letra [3] dentro de dividido
-print(dividido[2][3])
+print(dividido[0][3])

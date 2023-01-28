@@ -1,6 +1,3 @@
-from os import name
-
-
 n = 1
 print('\nDigite um número negativo para encerrar o programa!\n')
 
