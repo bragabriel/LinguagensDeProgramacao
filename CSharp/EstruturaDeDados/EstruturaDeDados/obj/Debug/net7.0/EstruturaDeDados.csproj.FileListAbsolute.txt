@@ -1,0 +1,15 @@
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.csproj.AssemblyReference.cache
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.AssemblyInfoInputs.cache
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.AssemblyInfo.cs
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.csproj.CoreCompileInputs.cache
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\bin\Debug\net7.0\EstruturaDeDados.exe
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\bin\Debug\net7.0\EstruturaDeDados.deps.json
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\bin\Debug\net7.0\EstruturaDeDados.runtimeconfig.json
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\bin\Debug\net7.0\EstruturaDeDados.dll
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\bin\Debug\net7.0\EstruturaDeDados.pdb
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.dll
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\refint\EstruturaDeDados.dll
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.pdb
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\EstruturaDeDados.genruntimeconfig.cache
+C:\Users\birio\source\repos\EstruturaDeDados\EstruturaDeDados\obj\Debug\net7.0\ref\EstruturaDeDados.dll
