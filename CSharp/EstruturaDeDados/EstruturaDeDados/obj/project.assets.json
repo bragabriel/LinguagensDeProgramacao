@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\birio\\source\\repos\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
+      "projectUniqueName": "C:\\Users\\birio\\Documents\\GitProjetos\\LinguagensDeProgramacao\\CSharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
       "projectName": "EstruturaDeDados",
-      "projectPath": "C:\\Users\\birio\\source\\repos\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
+      "projectPath": "C:\\Users\\birio\\Documents\\GitProjetos\\LinguagensDeProgramacao\\CSharp\\EstruturaDeDados\\EstruturaDeDados\\EstruturaDeDados.csproj",
       "packagesPath": "C:\\Users\\birio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\birio\\source\\repos\\EstruturaDeDados\\EstruturaDeDados\\obj\\",
+      "outputPath": "C:\\Users\\birio\\Documents\\GitProjetos\\LinguagensDeProgramacao\\CSharp\\EstruturaDeDados\\EstruturaDeDados\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\birio\\AppData\\Roaming\\NuGet\\NuGet.Config",
