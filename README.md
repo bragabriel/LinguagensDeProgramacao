@@ -1,2 +1,1 @@
-# Repositório criado para estudo nas Linguagens de Programação & HTML_CSS
- 
+Repositório criado para estudos em Linguagens de Programação, Marcação e Estilo.
